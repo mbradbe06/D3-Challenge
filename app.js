@@ -1,6 +1,6 @@
 // @TODO: YOUR CODE HERE!
-const svgWidth = 700;
-const svgHeight = 500;
+const svgWidth = 1000;
+const svgHeight = 700;
 
 const margin = {
   top: 20,
@@ -61,7 +61,7 @@ d3.csv("data.csv").then(censusData => {
                               .append('circle')
                               .attr('cx', d => xScale(d.poverty))
                               .attr('cy', d => yScale(d.healthcare))
-                              .attr('r', '12')
+                              .attr('r', '15')
                               .attr('opacity','0.8')
                               .classed('stateCircle',true);
     
@@ -72,7 +72,7 @@ d3.csv("data.csv").then(censusData => {
                               .append('text')
                               .attr('x', d => xScale(d.poverty))
                               .attr('y', d => yScale(d.healthcare-0.1))
-                              .attr('font-size','8px')
+                              .attr('font-size','10px')
                               .text(d => d.abbr)
                               .classed('stateText',true);
     
