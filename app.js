@@ -90,9 +90,11 @@ d3.csv("data.csv").then(censusData => {
     .attr("class", "aText")
     .text("In Poverty (%)");
 
-    //remove initial x and y ticks to tidy up axes
+    //remove initial x and y ticks to tidy up axes origin
     d3.selectAll(".tick").filter(d => d === 4).remove();
-    d3.selectAll(".tick").filter(d => d === 8).remove();
+    const removex = d3.select(".tick").select("text").remove();
+    console.log(removex)
+    
 
   }).catch(function (error) {
   console.log(error);
