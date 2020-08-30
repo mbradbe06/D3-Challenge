@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12" style='text-align: center'>
+        <h1>D3Times</h1>
+        <h2>Extra! Extra! Read all about it!</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div class="article">
+          <h2 style='text-align: center'>States With Greater Incidences of Poverty Also Show Greater Lack of Healthcare</h2>
+          <p>Data obtained from the U.S. Census Bureau and Behavioral Risk Factor Surveillance System show that a positive
+            correlation exists between states' poverty rate and their percentage of population lacking healthcare.  This comes as no
+            surprise - it makes sense logically that the greater the population you have living below the poverty line, the more
+            people you'll have that can't afford medical care and health insurance.  
+          </p>
+
+          <p>As seen in the above scatter plot, Texas has the greatest number of people lacking healthcare at over 24% of the population
+            with a poverty rate approaching 18%.  Other states struggling most include Georgia, Louisiana, New Mexico, and
+            Mississippi.  A couple of states, West Virginia and Kentucky, do not show as great a percentage lacking healthcare
+            despite having poverty rates as high or greater than the previously mentioned struggling states.  This could be due to lower state
+            populations but more in depth research is needed to account for these differences.
+          </p>
+
+          <p>The fact remains that the have-nots in our society also go without proper medical care, a grim reality that we must all work together
+            to fight so that no individual goes without the care they need.  If everyone were to have regular exams and proactive care, it could ultimately
+            ease the burden on our medical system by keeping individuals healthy - avoiding extreme and costly procedures for ailments that could have been
+            prevented.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>The Coding Boot Camp&copy;2016</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
